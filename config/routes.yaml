@@ -1,3 +1,19 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\UserController::new
+
+demandList:
+    path: /admin/demandList
+    controller: App\Controller\AdminController::getUsers
+
+setQuestionsMarked:
+    path: /admin/setQuestionsMarked
+    controller: App\Controller\AdminController::setQuestionsMarked
+
+app_login:
+    path: /admin/login
+    controller: App\Controller\AdminController::login
+
+app_logout:
+    path: /admin/logout
+    controller: App\Controller\AdminController::logout
